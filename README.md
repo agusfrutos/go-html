@@ -4,8 +4,8 @@
 # PROYECTO GO
 
 backend
-[ ] - Servidor http (echo o vanilla)
-[ ] - APIs (Controller, Service, Repository, Models/Entities)
+- [  ] Servidor http (echo o vanilla)
+- [ ] APIs (Controller, Service, Repository, Models/Entities)
 
 "frontend"
 [ ] - Renderizar html (nuevo paradigma) (templ)
