@@ -1,15 +1,19 @@
 package main
 
 import (
-	"go-html/handler"
-
-	"github.com/labstack/echo/v4"
+	"log"
+	"net/http"
+	"text/template"
 )
 
 func main() {
-	app := echo.New()
-	homeHandler := handler.HomeHandler()
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("static"))))
 
-	app.GET("/home", homeHandler.HandleHome)
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		tmpl := template.Must(template.ParseFiles("./view/home.html"))
+		tmpl.Execute(w, nil)
+	})
+	log.Println("Corriendo en puerto: 3000")
 
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }

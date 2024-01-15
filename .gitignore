@@ -1,0 +1,53 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node
+node_modules/
+
+
+# Temporary files
+*~
+*#
+.#*
+coverage.txt
+/.tmp/
+
+go-build.log
+go-install.log
+go-test.json
+
+# Vendors
+package-lock.json
+node_modules/
+vendor/
+
+# Binaries for programs and plugins
+dist/
+gin-bin
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# test
+go-test.json
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# IDE settings
+.idea
+.vscode/
+.history/
+
+.env
