@@ -1,17 +1,16 @@
-# TO DOS
+# GOLANG-TEMPLATE-PROJECT
 
-# IDEA: EN PROCESO
-# PROYECTO GO
-
-backend
+##### backend
 - [  ] Servidor http (echo o vanilla)
 - [ ] APIs (Controller, Service, Repository, Models/Entities)
 
-"frontend"
-[ ] - Renderizar html (nuevo paradigma) (templ)
-[ ] - Comunicación http con HTMX
-[ ] - tailwindcss
+##### Base de datos
+- [  ] Decidir base de datos (postgreSQL, SQL Server, sqlite)
 
+##### frontend
+- [  ] Renderizar html (nuevo paradigma) (templ)
+- [  ] Comunicación http con HTMX
+- [  ]  tailwindcss
 
-#soon
-[ ] - Usar docker para deployar
+##### Deploy
+- [  ]  Usar docker para deployar
